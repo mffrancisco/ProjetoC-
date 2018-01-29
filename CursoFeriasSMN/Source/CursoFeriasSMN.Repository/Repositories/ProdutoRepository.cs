@@ -27,10 +27,14 @@ namespace CursoFeriasSMN.Repository.Repositories
                 {
                     produtos.Add(new Produto
                     {
-                        Nome = reader.ReadAsString("Nome")
+                        CodigoProduto = reader.ReadAsInt("CodigoProduto"),
+                        Nome = reader.ReadAsString("Nome"),
+                        Preco = reader.ReadAsDecimal("Preco"),
+                        Estoque = reader.ReadAsInt("Estoque")
                     });
                 }
             }
+            return produtos;
         }
     }
 }
