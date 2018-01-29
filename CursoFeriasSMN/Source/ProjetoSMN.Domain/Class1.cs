@@ -8,5 +8,6 @@ namespace ProjetoSMN.Domain
 {
     public class Class1
     {
+
     }
 }
