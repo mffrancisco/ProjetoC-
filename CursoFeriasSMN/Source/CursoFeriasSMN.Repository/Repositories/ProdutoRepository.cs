@@ -30,7 +30,7 @@ namespace CursoFeriasSMN.Repository.Repositories
                         CodigoProduto = reader.ReadAsInt("CodigoProduto"),
                         Nome = reader.ReadAsString("Nome"),
                         Preco = reader.ReadAsDecimal("Preco"),
-                        Estoque = reader.ReadAsInt("Estoque")
+                        Estoque = reader.ReadAsShort("Estoque")
                     });
                 }
             }

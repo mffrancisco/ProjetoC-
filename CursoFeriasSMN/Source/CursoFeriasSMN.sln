@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoFeriasSMN.Repository",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoFeriasSMN.Domain", "ProjetoSMN.Domain\CursoFeriasSMN.Domain.csproj", "{7ED06163-A0E6-4CBC-B17D-4CC9B7C00E5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoFeriasSMN.Application", "CursoFeriasSMN.Application\CursoFeriasSMN.Application.csproj", "{08B3622F-5E1D-45B8-93BF-7DB20C7286EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{7ED06163-A0E6-4CBC-B17D-4CC9B7C00E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ED06163-A0E6-4CBC-B17D-4CC9B7C00E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ED06163-A0E6-4CBC-B17D-4CC9B7C00E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08B3622F-5E1D-45B8-93BF-7DB20C7286EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B3622F-5E1D-45B8-93BF-7DB20C7286EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B3622F-5E1D-45B8-93BF-7DB20C7286EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B3622F-5E1D-45B8-93BF-7DB20C7286EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{67AA14D9-847A-42CA-B4DD-7E71C60B7D79} = {F49C5989-4AF1-4100-B8EC-A6C8C3587BE3}
 		{B1EC693B-D91E-4FF0-8AA8-A96344EDA684} = {3CF6854C-00D3-4444-9314-0C46DD78893D}
 		{7ED06163-A0E6-4CBC-B17D-4CC9B7C00E5F} = {BBFD9F45-86B7-4F8F-A2E1-0E5B97402A2B}
+		{08B3622F-5E1D-45B8-93BF-7DB20C7286EE} = {A67F5B8A-47D8-4A24-A50E-F590B1FF9459}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A286957-6D67-43DF-8426-7EEB2A835A21}
