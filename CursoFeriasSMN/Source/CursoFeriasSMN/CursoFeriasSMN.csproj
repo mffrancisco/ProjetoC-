@@ -152,7 +152,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Lib\css\Geral.css" />
+    <Content Include="Lib\css\Home.css" />
     <Content Include="Lib\css\materialize.min.css" />
+    <Content Include="Lib\imagens\download.svg" />
+    <Content Include="Lib\imagens\smnicon.png" />
+    <Content Include="Lib\imagens\smnwallpaper.png" />
     <Content Include="Lib\scripts\materialize.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
@@ -172,7 +177,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Lib\imagens\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +191,7 @@
     <Content Include="Lib\fonts\roboto\Roboto-Thin.woff" />
     <Content Include="Lib\fonts\roboto\Roboto-Thin.woff2" />
     <None Include="packages.config" />
+    <Content Include="Views\Produto\GridProdutos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CursoFeriasSMN.Application\CursoFeriasSMN.Application.csproj">

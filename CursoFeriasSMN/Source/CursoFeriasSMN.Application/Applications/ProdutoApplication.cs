@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace CursoFeriasSMN.Application.Applications
 {
-    public class ProdutoApplication
+    public class ProdutoApplication 
     {
         private readonly string _enderecoApi = $"{ApiConfig.EnderecoApi}/produto";
 
-        public Response<IEnumerable<ProdutoModel>> GetProdutos()
+        public Response<IEnumerable<ProdutoModel>> GetProduto()
         {
             using (var client = new HttpClient())
             {
-                var response = client.GetAsync($"{_enderecoApi}/listarProdutos").Result;
+                var response = client.GetAsync($"{_enderecoApi}/listaProdutos").Result;
                 return new Response<IEnumerable<ProdutoModel>>(response.Content.ReadAsStringAsync().Result, response.StatusCode);
             }
         }

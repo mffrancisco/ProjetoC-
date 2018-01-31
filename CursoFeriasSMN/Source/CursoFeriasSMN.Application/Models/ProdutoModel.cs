@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CursoFeriasSMN.Application.Models
 {
-    class ProdutoModel
+    public class ProdutoModel
     {
         public int CodigoProduto { get; set; }
         public string Nome { get; set; }

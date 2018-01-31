@@ -1,0 +1,32 @@
+﻿@model IEnumerable<CursoFeriasSMN.Application.Models.ProdutoModel>
+@{ Layout = null;}
+
+<table class="striped" id="gridProdutos">
+    <thead>
+    <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Valor R$</th>
+        <th>Estoque</th>
+        @*@<th>
+            <a class="btn-floating waves-effect waves-ligth red tooltipped"
+               style="float: right" data-position="left"
+               data-delay="50" data-tooltip="Novo" href="#!">
+                <i class="material-icons">add_circle</i>
+            </a>
+        </th>*@
+    </tr>
+    </thead>
+    <tbody>
+        @foreach(var produto in Model)
+        {
+        <tr>
+            <td>@produto.CodigoProduto</td>
+            <td>@produto.Nome</td>
+            <td>@produto.Preco</td>
+            <td>@produto.Estoque</td>
+        </tr>
+        }
+    </tbody>
+
+</table>

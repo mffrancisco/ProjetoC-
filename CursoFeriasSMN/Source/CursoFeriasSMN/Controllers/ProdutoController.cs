@@ -10,7 +10,7 @@ namespace CursoFeriasSMN.Controllers
 
         public ActionResult ListarProdutos()
         {
-            var response = _produtoApplication.GetProdutos();
+            var response = _produtoApplication.GetProduto();
 
             if(response.Status != HttpStatusCode.OK)
             {
@@ -19,7 +19,7 @@ namespace CursoFeriasSMN.Controllers
                 return Content(response.ContentAsString);
             }
 
-            return View("", response.Content);
+            return View("GridProdutos", response.Content);
         }
     }
 }

@@ -1,0 +1,26 @@
+﻿body {
+    background-image: url("../Images/smnwallpaper.png");
+    background-size: 100% auto;
+}
+
+.coluna {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: 0 30px;
+}
+
+.ajuste {
+    display: flex;
+    padding-top: 5%;
+}
+
+.btn-floating {
+    margin: 0 3px;
+}
+
+.container {
+    width: 80% !important;
+    max-width: 3000px;
+}body {
+}

@@ -7,7 +7,9 @@
             <div class="center">
                 <h1 class="bold">Produtos</h1>
             </div>
-            @Html.Partial("../Produto/TableProdutos")
+            <div id="tableProdutos">
+
+            </div>
         </div>
     </div>
     <div class="row ajuste">
@@ -15,23 +17,21 @@
             <div class="center">
                 <h1 class="bold">Clientes</h1>
             </div>
-            @Html.Partial("../Cliente/TableClientes")
         </div>
         <div class="col s5 coluna">
             <div class="center">
                 <h1 class="bold">Vendas</h1>
             </div>
-            @Html.Partial("../Venda/TableVendas")
         </div>
     </div>
 </div>
 
 <script>
-
+    
     //Trazendo a lista de produtos
-    $.get('@Url.Action("Listar", "Produto")')
+    $.get('@Url.Action("ListarProdutos", "Produto")')
         .done(function (data) {
-            $("#gridProdutos tbody").html(data).slideDown("fast");
+            $("#tableProdutos").html(data)
         }).
         fail(function (xhr) {
             Materialize.toast(xhr.responseText, 5000);
