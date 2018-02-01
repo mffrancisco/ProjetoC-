@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Formatting;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,5 +21,15 @@ namespace CursoFeriasSMN.Application.Applications
                 return new Response<IEnumerable<ProdutoModel>>(response.Content.ReadAsStringAsync().Result, response.StatusCode);
             }
         }
+
+        public Response<string> PostProduto(ProdutoModel produto)
+        {
+            using (var client = new HttpClient())
+            {
+                var response = client.PostAsync($"{_enderecoApi}/cadastraProduto", produto, new JsonMediaTypeFormatter()).Result;
+                return new Response<string>(response.Content.ReadAsStringAsync().Result, response.StatusCode);
+            }
+        }
+
     }
 }
